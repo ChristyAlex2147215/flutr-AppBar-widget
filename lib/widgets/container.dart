@@ -33,12 +33,25 @@ class CustomAppBar extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          color: Colors.deepPurpleAccent[400],
-          width: 300,
+          // color: Colors.deepPurpleAccent[400],
+          width: double.infinity,
           height: 300,
-          child: Text(
+          margin: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(16),
+          alignment: Alignment.centerLeft,
+          decoration: BoxDecoration(
+              color: Colors.deepPurpleAccent[100]!,
+              border: Border.all(color: Colors.red[200]!, width: 15),
+              borderRadius: BorderRadius.circular(25),
+              boxShadow: const [
+                BoxShadow(
+                    color: Colors.black26,
+                    offset: Offset(10, 15),
+                    blurRadius: 20)
+              ]),
+          child: const Text(
             "Hello world",
-            style: TextStyle(fontSize: 25),
+            style: TextStyle(fontSize: 25, color: Colors.white),
           ),
         ),
       ),
