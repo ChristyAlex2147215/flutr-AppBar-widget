@@ -19,18 +19,54 @@ class SocialMediaCard extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Card(
                 elevation: 15,
-                shadowColor: Colors.amber,
-                color: Colors.blueGrey,
+                shadowColor: Colors.grey,
+                color: Colors.white,
                 child: Column(
                   children: [
                     ListTile(
-                      title: Text("Sachin Tendular"),
-                      subtitle: Text("23 minutes ago"),
+                      title: const Text("Mad Joker"),
+                      subtitle: const Text(
+                        "23 minutes ago",
+                        style: TextStyle(color: Colors.grey),
+                      ),
                       textColor: Colors.black,
-                      leading: Icon(Icons.video_file),
+                      leading: const CircleAvatar(
+                        radius: 50,
+                        backgroundImage: AssetImage("images/joker.jpg"),
+                      ),
                       iconColor: Colors.grey,
                       onTap: () {},
-                      trailing: Icon(Icons.more_horiz),
+                      trailing: const Icon(Icons.more_horiz),
+                    ),
+                    Container(
+                      child: Padding(
+                        padding: EdgeInsetsDirectional.all(30),
+                        child: Column(children: [
+                          Text(
+                            "Cute Puppy some text....",
+                            textAlign: TextAlign.left,
+                          ),
+                          Image.asset("images/joker.jpg"),
+                          Container(
+                            child: const Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsets.only(right: 15),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Icon(Icons.thumb_down),
+                                      Icon(Icons.thumb_up)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                        ]),
+                      ),
                     )
                   ],
                 ),
