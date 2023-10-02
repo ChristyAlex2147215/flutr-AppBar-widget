@@ -5,6 +5,7 @@ import "./widgets/rowcolumnWidget.dart";
 import "./widgets//textWidget.dart";
 import "./widgets/ButtonWidgets.dart";
 import "./widgets/TextFields.dart";
+import "./widgets/ImageWIdget.dart";
 
 //main function where the app is called to execute
 void main() {
@@ -21,6 +22,6 @@ class MyApp extends StatelessWidget {
         title: "Demo App",
         // home page for route "/"
         // scaffold gives white screen
-        home: TextFields());
+        home: ImageWidgets());
   }
 }
