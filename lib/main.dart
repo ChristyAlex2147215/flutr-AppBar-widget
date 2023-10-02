@@ -6,6 +6,9 @@ import "./widgets//textWidget.dart";
 import "./widgets/ButtonWidgets.dart";
 import "./widgets/TextFields.dart";
 import "./widgets/ImageWIdget.dart";
+import "./widgets/CardWIdget.dart";
+import "./widgets/CircleAvatar.dart";
+import "./Exercises/SocialMediaCardWiget.dart";
 
 //main function where the app is called to execute
 void main() {
@@ -22,6 +25,6 @@ class MyApp extends StatelessWidget {
         title: "Demo App",
         // home page for route "/"
         // scaffold gives white screen
-        home: ImageWidgets());
+        home: SocialMediaCard());
   }
 }
