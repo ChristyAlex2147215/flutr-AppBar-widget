@@ -41,7 +41,22 @@ class ButtonWidget extends StatelessWidget {
               onPressed: () {
                 log("Elavated button click");
               },
-              child: Text("Sign in"))
+              child: Text("Sign in")),
+          Container(
+              margin:
+                  EdgeInsets.only(top: 20.0), // Set the top margin as needed
+              child: OutlinedButton(
+                  onPressed: () {},
+                  child: Text("Sign Out"),
+                  style: ButtonStyle(
+                    shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(75))),
+                    side: MaterialStateProperty.all(
+                      BorderSide(color: Colors.yellow, width: 2),
+                    ),
+                    foregroundColor: MaterialStateProperty.all(Colors.black),
+                    minimumSize: MaterialStateProperty.all(Size(150, 150)),
+                  ))),
         ],
       )),
     );
